@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Recommendation Website</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav>
+    <img class="logo" alt="" src="travel-logo-test.png">
+    <h1>TravelBloom</h1>
+    <ul>
+        <li><a href="./travel_recommendation.html" id="home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li><a href="./travel_aboutus.html" id="home"><i class="fa fa-fw fa-info-circle"></i>About Us</a></li>
+        <li><a href="./travel_contactus.html" id="contact"><i class="fa fa-fw fa-envelope"></i>Contact Us </a></li>
+        <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword"></li>
+        <li><button id='btnSearch'>Search</button></li>
+        <li><button id='btnClear'>Clear</button></li>
+    </ul>
+</nav>
+<div class="container">
+<div class="travel__text">
+    <h1>Explore Dream Destination</h1>
+<div>
+<div class="travel__subtext">
+    <h1>It encourages exploration of unfsamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignities a sense of wonder</h1>
+<div>
+<button id="btnBookNow">Book Now</button>
+<div class="searchCondition">
+    <div class="result" id="result"></div>
+</div>
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>
