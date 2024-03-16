@@ -7,44 +7,38 @@
     <!-- Load an icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<nav>
-    <img class="logo" alt="" src="travel-logo-test.png">
-    <h1>TravelBloom</h1>
-    <ul>
-        <li><a href="./travel_recommendation.html" id="home"><i class="fa fa-fw fa-home"></i>Home</a></li>
-        <li><a href="./travel_aboutus.html" id="home"><i class="fa fa-fw fa-info-circle"></i>About Us</a></li>
-        <li><a href="./travel_contactus.html" id="contact"><i class="fa fa-fw fa-envelope"></i>Contact Us </a></li>  
+<body class="travelBloom">
+  <nav class="travelBloom__nav">
+    <img class="travelBloom__logo" alt="">
+    <ul class="travelBloom__list">
+        <li class="travelBloom__listitem"><a class="travelBloom__link" href="./travel_recommendation.html" id="home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li class="travelBloom__listitem"><a class="travelBloom__link" href="./travel_aboutus.html" id="aboutus"><i class="fa fa-fw fa-info-circle"></i>About Us</a></li>
+        <li class="travelBloom__listitem"><a class="travelBloom__link" href="./travel_contactus.html" id="contact"><i class="fa fa-fw fa-envelope"></i>Contact Us </a></li>
     </ul>
-</nav>
-<div class="container">
-<div class="travel__text">
-    <h1>Contact Us</h1>
-<div>
-    <form id="contactForm">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="condition">Condition</label>
-          <input type="text" id="condition" name="condition" required>
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" onclick="thankyou()">Submit</button>
-    </form>
-    <script>
-    function thankyou(){
-        alert('Thank you for contacting us!')
-    }
-    </script>
-<script src="./health_analysis.js"></script>
+  </nav>
+  <div class="travelBloom__text">
+      <h1>Contact Us</h1>
+  <div>
+  <form id="contactForm" class="travelBloom__section">
+    <div class="travelBloom__form">
+      <label class="travelBloom__label" for="name">Name</label>
+      <div class="travelBloom__controls">
+        <input class="travelBloom__input" type="text" id="name" name="name" required>
+      </div>
+      <br>
+      <label class="travelBloom__label" for="email">Email</label>
+      <div class="travelBloom__controls">
+        <input class="travelBloom__input" type="email" id="email" name="email" required>
+      </div>
+      <br>
+      <label class="travelBloom__label" for="message">Message</label>
+      <div class="travelBloom__controls">
+        <textarea class="travelBloom__textarea" id="message" name="message" rows="5" required></textarea>
+      </div>
+    </div>
+    <button class="travelBloom__button" id="btnSubmit">Submit</button>
+    <button class="travelBloom__button" id="btnReset">Reset</button>
+  </form>
+<script src="./travel_contactus.js"></script>
 </body>
 </html>

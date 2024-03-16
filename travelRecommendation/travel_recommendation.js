@@ -9,10 +9,10 @@ function searchCondition() {
         if (countries) {
           const cities = countries.cities[0];
           console.log(cities.name);
-          resultDiv.innerHTML += `<h2>${cities.name}</h2>`;
-          resultDiv.innerHTML += `<img src="${cities.imageUrl}" alt="hjh">`;
-          resultDiv.innerHTML += `<p><strong>Description:</strong> ${cities.description}</p>`;
-          resultDiv.innerHTML += `<p><button onclick="visitPage('${cities.name}');">Visit</button></p>`;
+          resultDiv.innerHTML += `<h2 class="travelBloom__sectionName">${cities.name}</h2>`;
+          resultDiv.innerHTML += `<img class="travelBloom__sectionImage" src="${cities.imageUrl}" alt="">`;
+          resultDiv.innerHTML += `<p class="travelBloom__sectionDescription"><strong>Description:</strong> ${cities.description}</p>`;
+          resultDiv.innerHTML += `<p class="travelBloom__sectionDescription"><button class="travelBloom__button" onclick="visitPage('${cities.name}');">Visit</button></p>`;
         } else {
           resultDiv.innerHTML = 'Countries not found.';
         }
@@ -32,5 +32,14 @@ function visitPage(name) {
     window.open('https://en.wikipedia.org/wiki/' + name, '_blank');
 }
 
+function bookNow() {
+    alert("Under construction");
+}
+
+function testNow() {
+    alert('Thank you for contacting us!')
+}
+
 btnSearch.addEventListener('click', searchCondition);
 btnClear.addEventListener('click', clearAll);
+btnBook.addEventListener('click', bookNow);

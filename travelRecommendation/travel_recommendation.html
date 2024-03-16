@@ -7,30 +7,28 @@
     <!-- Load an icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<nav>
-    <img class="logo" alt="" src="travel-logo-test.png">
-    <h1>TravelBloom</h1>
-    <ul>
-        <li><a href="./travel_recommendation.html" id="home"><i class="fa fa-fw fa-home"></i>Home</a></li>
-        <li><a href="./travel_aboutus.html" id="home"><i class="fa fa-fw fa-info-circle"></i>About Us</a></li>
-        <li><a href="./travel_contactus.html" id="contact"><i class="fa fa-fw fa-envelope"></i>Contact Us </a></li>
-        <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword"></li>
-        <li><button id='btnSearch'>Search</button></li>
-        <li><button id='btnClear'>Clear</button></li>
-    </ul>
-</nav>
-<div class="container">
-<div class="travel__text">
-    <h1>Explore Dream Destination</h1>
-<div>
-<div class="travel__subtext">
-    <h1>It encourages exploration of unfsamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignities a sense of wonder</h1>
-<div>
-<button id="btnBookNow">Book Now</button>
-<div class="searchCondition">
-    <div class="result" id="result"></div>
-</div>
-<script src="./travel_recommendation.js"></script>
+<body class="travelBloom">
+    <nav class="travelBloom__nav">
+        <img class="travelBloom__logo" alt="">
+        <ul class="travelBloom__list">
+            <li class="travelBloom__listitem"><a class="travelBloom__link" href="./travel_recommendation.html" id="home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li class="travelBloom__listitem"><a class="travelBloom__link" href="./travel_aboutus.html" id="aboutus"><i class="fa fa-fw fa-info-circle"></i>About Us</a></li>
+            <li class="travelBloom__listitem"><a class="travelBloom__link" href="./travel_contactus.html" id="contact"><i class="fa fa-fw fa-envelope"></i>Contact Us </a></li>
+            <li class="travelBloom__listitem"><input class="travelBloom__inputfield" type="search" id="conditionInput" placeholder="Enter a destination"></li>
+            <li class="travelBloom__listitem"><button class="travelBloom__button" id='btnSearch'>Search</button></li>
+            <li class="travelBloom__listitem"><button class="travelBloom__button" id='btnClear'>Clear</button></li>
+        </ul>
+    </nav>
+    <div class="travelBloom__text">
+        <h1>Explore Dream Destination</h1>
+    <div>
+    <div class="travelBloom__subtext">
+        <h1>It encourages exploration of unfsamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignities a sense of wonder</h1>
+    <div>
+    <button class="travelBloom__button" id="btnBook">Book Now</button>
+    <div class="travelBloom__section">
+        <div class="travelBloom__sectionlist" id="result"></div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
 </body>
 </html>
